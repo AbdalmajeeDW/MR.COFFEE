@@ -16,7 +16,7 @@ export default function Header() {
       </a>
         </div>
 
-      <nav className="flex items-center   gap-16   px-5">
+      <nav className="flex items-center   gap-10   px-5">
         <a href="#" className="text-white  xs: p-1 lg:p-2 bg-black hover:text-orange-800  rounded  xs:text-xs lg:text-xl ">
           Menu
         </a>
