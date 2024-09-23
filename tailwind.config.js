@@ -7,7 +7,18 @@ module.exports = {
   ],
   theme: {
     colors: {
-      mainColor:'#E7D6B0'
+      primaryColor:'#d7c292',
+      secondryColor:'#a86830',
+      transparent: 'transparent',
+      current: 'currentColor',
+      'white': '#ffffff',
+      'purple': '#3f3cbb',
+      'midnight': '#121063',
+      'metal': '#565584',
+      'tahiti': '#3ab7bf',
+      'silver': '#ecebff',
+      'bubble-gum': '#ff77e9',
+      'bermuda': '#78dcca',
     },
     screens: {
       'xs':'350px',

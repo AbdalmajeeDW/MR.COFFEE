@@ -30,6 +30,11 @@ import dispasito_2 from "../public/dispasito/dispasito_2.jpg";
 import icewhitecoco_1 from "../public/icewhitecoco/1.jpg";
 import msSummer from "../public/msSummer/msSummer_2.jpg";
 import redVelvet_1 from "../public/redVelvet/redVelvet_1.jpg";
+import blueSummer_2 from "../public/blueSummer/blueSummer_2.jpg";
+import iceTeaDrak_1 from "../public/iceTeaDrak/iceTeaDrak_1.jpg";
+import milkcheckpounty_1 from "../public/milkcheckpounty/milkcheckpounty_1.jpg";
+import sharlot_1 from "../public/sharlot/sharlot_1.jpg";
+import senabon_1 from "../public/senabon/senabon_1.jpg";
 
 const products = [
   {
@@ -188,6 +193,24 @@ const products = [
     price: "19,500 ل.س",
     categorie: "candies",
   },
+
+  {
+    product: sharlot_1,
+    Description:
+      " طبقات من البسكويت مع الحليب الخاص، تُضاف إليها الشوكولا لذّة مُميزة.",
+    title: "شارلوت",
+    price: "14,500 ل.س",
+    categorie: "candies",
+  },
+
+  {
+    product: senabon_1,
+    Description:
+      " رول من العجينة المُتبلة بالقرفة المُميزة مع صوص الجبنة الخاص، لذّة دافئة.",
+    title: "سينابون",
+    price: "17000 ل.س",
+    categorie: "candies",
+  },
   ////////iceDrink////////
 
   {
@@ -204,6 +227,30 @@ const products = [
       " بوظة الحليب مع نكهة الدراق والليموناضة، الانتعاش المثالي في يوم حار. ",
     title: "مستر صيف ",
     price: "21,500 ل.س",
+    categorie: "iceDrink",
+  },
+  {
+    product: blueSummer_2,
+    Description:
+      " طعم الفواكه الاستوائية المنعش مع الليموناضة، تجربة استوائية حقيقية ",
+    title: "بلو سمر ",
+    price: "20,500 ل.س",
+    categorie: "iceDrink",
+  },
+
+  {
+    product: iceTeaDrak_1,
+    Description: " شاي مثلج بنكهة الدراق، للذوق الفريد و الشعور بالانتعاش. ",
+    title: "ايس تي دراق ",
+    price: "19,500 ل.س",
+    categorie: "iceDrink",
+  },
+
+  {
+    product: milkcheckpounty_1,
+    Description: "بوظة مع نكهة الباونتي وجوز الهند، لذة كلاسيكية حقيقية",
+    title: "ميلك شيك باونتي ",
+    price: "24,000 ل.س",
     categorie: "iceDrink",
   },
 ];
