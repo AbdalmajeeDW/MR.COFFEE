@@ -32,10 +32,10 @@ export default function Home(props) {
                 <div className="h-44 justify-between	flex flex-col	flex-1	">
 
 
-                <div className="px-2 py-2 text-white text-2xl">{e.title}</div>
+                <div className="px-2 py-2 text-black text-2xl">{e.title}</div>
 
-                <div className="px-2 text-white text-lg flex flex-col	flex-1">{e.Description}</div>
-                <div className="px-2 py-2 flex justify-end text-white text-lg">{e.price}</div>
+                <div className="px-2 text-black text-lg flex flex-col	flex-1">{e.Description}</div>
+                <div className="px-2 py-2 flex justify-end text-black text-lg">{e.price}</div>
                 </div>
               </div>
             ) : null}

@@ -26,7 +26,7 @@ export default function Header() {
       <nav className="lg:flex md:flex sm:flex items-center  xs:hidden  gap-10   px-5">
         <a
           href="#"
-          className="text-white text-lg  xs:p-1 lg:p-2 bg-orange-900 hover:text-black  rounded  xs:text-xs lg:text-xl md:text-xl sm:text-xl"
+          className="text-black text-lg  xs:p-1 lg:p-2 bg-orange-900 hover:text-black  rounded  xs:text-xs lg:text-xl md:text-xl sm:text-xl"
         >
           القائمة
         </a>
@@ -55,7 +55,7 @@ export default function Header() {
         <nav className="lg:flex md:flex sm:flex  xs:flex xs:flex-col  gap-10 flex-1 items-start	  px-5">
         <a
           href="#"
-          className="text-white text-lg  xs:p-1 lg:p-2 bg-orange-900 hover:text-black  rounded  xs:text-xl lg:text-xl md:text-xl "
+          className="text-black text-lg  xs:p-1 lg:p-2 bg-orange-900 hover:text-black  rounded  xs:text-xl lg:text-xl md:text-xl "
         >
           القائمة
         </a>
