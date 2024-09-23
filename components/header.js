@@ -1,10 +1,19 @@
+"use client";
+
 import logo from "../public/logo_MrCoffe.png";
 import Image from "next/image";
+import { useState } from "react";
 import { AiOutlineAlignRight } from "react-icons/ai";
 
 export default function Header() {
+  const [drower, setDrower] = useState(false);
+ console.log(drower);
+ 
+
+
   return (
-    <header className="px-10 bg-orange-900 shadow backdrop-blur-sm z-10 flex flex-row items-center justify-between  w-full  p-2">
+    <div>
+    <header className="px-10 bg-mainColor   top-0 flex  fixed z-30 flex-row items-center justify-between xs:px-4  w-full  p-2">
       <div>
         <a
           href="/"
@@ -17,26 +26,59 @@ export default function Header() {
       <nav className="lg:flex md:flex sm:flex items-center  xs:hidden  gap-10   px-5">
         <a
           href="#"
-          className="text-white text-lg  xs: p-1 lg:p-2 bg-orange-900 hover:text-black  rounded  xs:text-xs lg:text-xl "
+          className="text-white text-lg  xs:p-1 lg:p-2 bg-orange-900 hover:text-black  rounded  xs:text-xs lg:text-xl md:text-xl sm:text-xl"
         >
           القائمة
         </a>
         <a
           href="#"
-          className="text-black text-lg hover:text-orange-950 xs:text-xs lg:text-xl"
+          className="text-black text-lg hover:text-orange-950 xs:text-xs lg:text-xl md:text-xl sm:text-xl"
         >
           معلومات عنا
         </a>
         <a
           href="#"
-          className="text-black  hover:text-orange-950 xs:text-xs lg:text-xl"
+          className="text-black  hover:text-orange-950 xs:text-xs lg:text-xl md:text-xl sm:text-xl"
         >
           اتصل بنا
         </a>
       </nav>
-      <div className="px-10 xs:flex sm:hidden lg:hidden md:hidden">
-        <AiOutlineAlignRight className="w-6 h-6 hover:text-gray-500" />
+      <div onClick={()=> setDrower(!drower)} className="px-10 xs:flex sm:hidden lg:hidden md:hidden">
+        <AiOutlineAlignRight className="w-6 h-6 hover:text-gray-500 cursor-pointer" />
       </div>
+     
     </header>
+    { drower && <div className="xs:flex flex-col sm:hidden lg:hidden md:hidden h-full w-40 fixed z-20 top-0  shadow-xl right-0 bg-mainColor  ">
+        
+        
+        <div className=" fixed top-28">
+        <nav className="lg:flex md:flex sm:flex  xs:flex xs:flex-col  gap-10 flex-1 items-start	  px-5">
+        <a
+          href="#"
+          className="text-white text-lg  xs:p-1 lg:p-2 bg-orange-900 hover:text-black  rounded  xs:text-xl lg:text-xl md:text-xl "
+        >
+          القائمة
+        </a>
+        <a
+          href="#"
+          className="text-black text-lg hover:text-orange-950 xs:text-xl lg:text-xl md:text-xl sm:text-xl"
+        >
+          معلومات عنا
+        </a>
+        <a
+          href="#"
+          className="text-black  hover:text-orange-950 xs:text-xl lg:text-xl md:text-xl sm:text-3xl"
+        >
+          اتصل بنا
+        </a>
+      </nav>
+
+
+        </div>
+      
+        
+        
+        </div>}
+    </div>
   );
 }

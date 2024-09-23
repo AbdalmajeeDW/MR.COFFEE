@@ -16,7 +16,7 @@ export default function Home(props) {
   const [categorie, setCategorie] = useState();
 
   return (
-    <div className="xl:grid xl:grid-cols-4 lg:grid xs:w-full lg:grid-cols-3  sm:grid sm:grid-cols-2  xs:grid xs:grid-cols-1   gap-4   px-10 my-10">
+    <div className="xl:grid xl:grid-cols-4 lg:grid xs:w-full lg:grid-cols-3  sm:grid sm:grid-cols-2  xs:grid xs:grid-cols-1   gap-4  px-10 my-40  ">
       {count &&
         count.map((e, i) => (
           <>

@@ -185,7 +185,7 @@ const products = [
     Description:
       " كيكة بنكهة الفريز الرقيقة تُغطى بكريمة الجبنة الخاصة، طعم مُميز",
     title: "ريد فيلفت",
-    price: "170,000 ل.س",
+    price: "19,500 ل.س",
     categorie: "candies",
   },
   ////////iceDrink////////
