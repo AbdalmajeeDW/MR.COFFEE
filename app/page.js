@@ -8,7 +8,7 @@ export default function Home(Component) {
     if (categoie === undefined) {
       setCategoie("hotDrink");
     }
-  });
+  },['']);
   return (
     <div className="h-screen ">
       <div className="flex gap-4 my-4 w-full justify-center xs:px-4 fixed z-10 top-16 shadow-xl bg-primaryColor py-4">

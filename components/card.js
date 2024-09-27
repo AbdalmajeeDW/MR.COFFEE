@@ -7,6 +7,9 @@ import products from "../COMMON/products";
 import { useEffect, useState } from "react";
 
 export default function Home(props) {
+
+  const [count, setCount] = useState();
+  const [categorie, setCategorie] = useState("hotDrink");
   useEffect(() => {
     setCount(products.products);
     console.log(props.categorie, "props.categorie");
@@ -16,8 +19,6 @@ export default function Home(props) {
       setCategorie(props.categorie);
     }
   });
-  const [count, setCount] = useState();
-  const [categorie, setCategorie] = useState("hotDrink");
   let dataFilter =
     count &&
     count.map((e, i) => (
