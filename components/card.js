@@ -7,14 +7,17 @@ import products from "../COMMON/products";
 import { useEffect, useState } from "react";
 
 export default function Home(props) {
-  
   useEffect(() => {
     setCount(products.products);
-
-    setCategorie(props.categorie);
+    console.log(props.categorie, "props.categorie");
+    if (props.categorie === undefined) {
+      setCategorie("hotDrink");
+    } else {
+      setCategorie(props.categorie);
+    }
   });
   const [count, setCount] = useState();
-  const [categorie, setCategorie] = useState();
+  const [categorie, setCategorie] = useState("hotDrink");
   let dataFilter =
     count &&
     count.map((e, i) => (
@@ -51,7 +54,7 @@ export default function Home(props) {
       <>
         {e.categorie === categorie ? (
           <div
-            className="bg-slate-100 h-full py-2 shadow-2xl shadow-black rounded"
+            className="bg-slate-100 h-full py-2 shadow-2xl shadow-black rounded transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-90 hover:bg-indigo-500 duration-300	drop-shadow-md"
             key={i}
           >
             <Image
@@ -77,7 +80,7 @@ export default function Home(props) {
     ));
   return (
     <div className="xl:grid xl:grid-cols-4 lg:grid xs:w-full lg:grid-cols-3  sm:grid sm:grid-cols-2  xs:grid xs:grid-cols-1   gap-4  px-10 my-40  ">
-     {data} 
+      {data}
     </div>
   );
 }

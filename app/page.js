@@ -1,21 +1,17 @@
 "use client";
-import { Bs0Circle } from "react-icons/bs";
 import Card from "../components/card";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Home(Component) {
   const [categoie, setCategoie] = useState();
-  // const [search, setSearch] = useState();
-// function searchProduct(e) {
-//   setSearch(e.target.value)
-
-  
-  
-// }
+  useEffect(() => {
+    if (categoie === undefined) {
+      setCategoie("hotDrink");
+    }
+  });
   return (
     <div className="h-screen ">
       <div className="flex gap-4 my-4 w-full justify-center xs:px-4 fixed z-10 top-16 shadow-xl bg-primaryColor py-4">
-      {/* <input onChange={(e)=>searchProduct(e)} /> */}
         <a href="#">
           <div
             onClick={() => setCategoie("hotDrink")}
@@ -53,7 +49,7 @@ export default function Home(Component) {
           </div>
         </a>
       </div>
-      <Card categorie={categoie}  />
+      <Card categorie={categoie} />
     </div>
   );
 }

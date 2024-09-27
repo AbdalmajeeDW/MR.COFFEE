@@ -1,13 +1,18 @@
 "use client";
-
 import logo from "../public/logo_MrCoffe.png";
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { AiOutlineAlignRight } from "react-icons/ai";
+import { usePathname, useSearchParams } from 'next/navigation'
+
 
 export default function Header() {
   const [drower, setDrower] = useState(false);
-
+  const pathname = usePathname()
+  useEffect(() => {
+    console.log(pathname);
+  
+  });
   return (
     <div>
       <header className="px-10 bg-primaryColor   top-0 flex  fixed z-30 flex-row items-center justify-between xs:px-4  w-full  p-2">
@@ -26,14 +31,14 @@ export default function Header() {
 
         <nav className="lg:flex md:flex sm:flex items-center  xs:hidden  gap-10   px-5">
           <a
-            href="#"
-            className="text-black text-lg  xs:p-1 lg:p-2 bg-orange-900 hover:text-black  rounded  xs:text-xs lg:text-xl md:text-xl sm:text-xl"
+            href="/"
+            className={`${pathname === '/' ? 'bg-secondryColor rounded text-white':'bg-primaryColor'}  text-black text-lg  xs:p-1 lg:p-2 bg-orange-900 hover:text-black  rounded  xs:text-xs lg:text-xl md:text-xl sm:text-xl`}
           >
             القائمة
           </a>
           <a
-            href="#"
-            className="text-black text-lg hover:text-orange-950 xs:text-xs lg:text-xl md:text-xl sm:text-xl"
+            href="/about"
+            className={`${pathname === '/about' ? 'bg-secondryColor p-2 rounded text-white':'bg-primaryColor text-black'} text-lg hover:text-orange-950 xs:text-xs lg:text-xl md:text-xl sm:text-xl`}
           >
             معلومات عنا
           </a>

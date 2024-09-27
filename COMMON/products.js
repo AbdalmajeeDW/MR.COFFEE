@@ -35,6 +35,11 @@ import iceTeaDrak_1 from "../public/iceTeaDrak/iceTeaDrak_1.jpg";
 import milkcheckpounty_1 from "../public/milkcheckpounty/milkcheckpounty_1.jpg";
 import sharlot_1 from "../public/sharlot/sharlot_1.jpg";
 import senabon_1 from "../public/senabon/senabon_1.jpg";
+import halamscoffee_1 from "../public/halamscoffee/halamscoffee_1.jpg";
+import cakebluebeary_1 from "../public/cakebluebeary/cakebluebeary_1.jpg";
+import cakeoreio_1 from "../public/cakeoreio/cakeoreio_1.jpg";
+import milkcheck_1 from "../public/milkchceckCaramil/milkcheck_1.jpg";
+import milkchecklotos_1 from "../public/milkchecklotos/milkchecklotos_1.jpg";
 
 const products = [
   {
@@ -211,6 +216,32 @@ const products = [
     price: "17000 ل.س",
     categorie: "candies",
   },
+
+  {
+    product: halamscoffee_1,
+    Description: " مزيج رائع من الكراميل والقهوة والبسكويت لذّة مُميزة.",
+    title: "حلا مستر كوفي",
+    price: "19,000 ل.س",
+    categorie: "candies",
+  },
+
+  {
+    product: cakebluebeary_1,
+    Description:
+      "مزيج من التوت الطازج والجبنة، تُغطى بطبقة بسكويت لذّة مُميزة.",
+    title: "تشيز كيك بلو بيري",
+    price: "21,000 ل.س",
+    categorie: "candies",
+  },
+
+  {
+    product: cakeoreio_1,
+    Description:
+      "مزيج من الجبنة وبسكويت الاوريو المطحون، تُغطى بطبقة بسكويت لذّة مُغرية.",
+    title: "تشيز كيك اوريو",
+    price: "18,000 ل.س",
+    categorie: "candies",
+  },
   ////////iceDrink////////
 
   {
@@ -251,6 +282,42 @@ const products = [
     Description: "بوظة مع نكهة الباونتي وجوز الهند، لذة كلاسيكية حقيقية",
     title: "ميلك شيك باونتي ",
     price: "24,000 ل.س",
+    categorie: "iceDrink",
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  {
+    product: milkcheck_1,
+    Description: "حليب وكراميل مع البوظة، حلاوة لا تُقاوم",
+    title: "ميلك شيك كراميل ",
+    price: "22,500 ل.س",
+    categorie: "iceDrink",
+  },
+  {
+    product:milkchecklotos_1 ,
+    Description: "حليب وكريمة اللوتس مع البوظة، لذة لا تُقاوم",
+    title: "ميلك شيك لوتس ",
+    price: "23,500 ل.س",
     categorie: "iceDrink",
   },
 ];
