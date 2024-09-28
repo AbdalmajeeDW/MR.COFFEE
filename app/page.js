@@ -62,8 +62,8 @@ export default function Home(Component) {
         </>
       ) : (
         <div className="h-screen w-full bg-primaryColor absolute z-50 top-0">
-          <div className="flex items-center justify-center my-32">
-            <Image src={logo} alt="dd" className="animate-bounce"/>
+          <div className="flex items-center justify-center my-52">
+            <Image src={logo} alt="dd" className="animate-bounce xs:w-40 xs:h-40 md:w-60 md:h-60 lg:w-60 lg:h-60" />
           </div>
         </div>
       )}
